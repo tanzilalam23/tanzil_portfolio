@@ -121,6 +121,6 @@ This project is open-source and free to use for learning and personal portfolios
 ## 🤝 Let's Connect
 
 For collaborations, ideas, or suggestions:
-📧 **Email**: [jasleenkaur11rps@gmail.com](mailto:jasleenkaur11rps@gmail.com)
+📧 **Email**: [jasleenkaur11rps@gmail.com](mailto:jasleen.matharoo@s.amity.edu)
 
 ---
