@@ -1,0 +1,260 @@
+/* === Global === */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* === Flip Card Effect === */
+.flip-card {
+  perspective: 1000px;
+  min-height: 260px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* === Flip Card Sides === */
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* === Front Side (Glassmorphic) === */
+.flip-front {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #1f2937;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+html.dark .flip-front {
+  background-color: rgba(55, 65, 81, 0.4); /* dark: gray-700 */
+  color: #f9fafb;
+}
+
+/* === Back Side === */
+.flip-back {
+  background-color: #8b5cf6;
+  color: white;
+  transform: rotateY(180deg);
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Project Bubble (Extra Styles) === */
+.project-bubble {
+  background-color: rgba(255, 255, 255, 0.1); /* glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-bubble:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 24px rgba(139, 92, 246, 0.2);
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #8b5cf6;
+}
+
+.project-description {
+  color: #4b5563;
+}
+
+html.dark .project-description {
+  color: #d1d5db;
+}
+
+/* === Project Button === */
+.project-button {
+  background-color: #8b5cf6;          /* Purple background */
+  color: #fff;                        /* White text */
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;             /* Prevent underline */
+}
+
+.project-button:hover {
+  background-color: #7c3aed;          /* Darker purple on hover */
+  color: #fff !important;             /* Ensure white stays on hover */
+  transform: scale(1.05);
+}
+
+/* === Skill Tags === */
+.skill-tag {
+  display: inline-block;
+  background-color: #e0d4fc;
+  color: #1f2937;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  transform-origin: center;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  background-color: #c4b5fd;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3);
+}
+
+html.dark .skill-tag {
+  background-color: #6d28d9;
+  color: #fff;
+}
+
+html.dark .skill-tag:hover {
+  background-color: #7c3aed;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.5);
+}
+
+/* === Contact Form === */
+.form-input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #1f2937;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.3);
+}
+
+html.dark .form-input {
+  background-color: #1f2937;
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+html.dark .form-input::placeholder {
+  color: #d1d5db;
+}
+
+/* === Send Button === */
+.send-button {
+  background-color: #8b5cf6;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #7c3aed;
+  transform: translateY(-2px);
+}
+
+/* === Navigation Link Hover === */
+.nav-link {
+  position: relative;
+  padding: 0.25rem 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 0.5rem;
+  color: #4b5563;
+}
+
+.nav-link:hover {
+  background-color: rgba(139, 92, 246, 0.1);
+  color: #6b21a8;
+  box-shadow: 0 2px 8px rgba(139, 92, 246, 0.2);
+  transform: translateY(-1px);
+}
+
+html.dark .nav-link {
+  color: #e5e7eb;
+}
+
+html.dark .nav-link:hover {
+  background-color: rgba(139, 92, 246, 0.2);
+  color: #c4b5fd;
+  box-shadow: 0 2px 10px rgba(168, 85, 247, 0.3);
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #8b5cf6; /* typing cursor */
+  animation: typing 4.5s steps(40, end) 1s infinite, blink 0.75s step-end infinite;
+  display: inline-block;
+  max-width: 100%;
+  font-family: monospace;
+} 
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #8b5cf6;
+  }
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
