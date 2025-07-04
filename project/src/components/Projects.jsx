@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style.css';
+import '../style.css'; // Adjust path if needed
 
 const projects = [
   {
@@ -41,18 +41,16 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-16 bg-gray-100 dark:bg-gray-900">
+    <section id="projects" className="py-16 bg-gray-100 dark:bg-gray-800">
       <div className="container mx-auto px-6 md:px-16">
-        <h3 className="text-3xl font-bold text-purple-600 mb-10 text-center">
-          Projects
-        </h3>
+        <h3 className="text-3xl font-bold text-purple-600 mb-10 text-center">Projects</h3>
 
         <div className="flex flex-wrap justify-center gap-8">
           {projects.map((project, index) => (
             <div key={index} className="flip-card">
               <div className="flip-inner">
-                {/* Front Face */}
-                <div className="flip-front project-bubble">
+                {/* Front */}
+                <div className="flip-front">
                   <h4 className="project-title">{project.title}</h4>
                   <p className="project-description mt-2">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mt-4">
@@ -67,7 +65,7 @@ const Projects = () => {
                   </div>
                 </div>
 
-                {/* Back Face */}
+                {/* Back */}
                 <div className="flip-back">
                   <a
                     href={project.link}
