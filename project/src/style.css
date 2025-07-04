@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
 /* === Global === */
 * {
   box-sizing: border-box;
@@ -255,6 +260,3 @@ html.dark .nav-link:hover {
     border-color: #8b5cf6;
   }
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
