@@ -1,31 +1,33 @@
 import React, { useEffect, useState } from 'react';
+import { FaArrowUp } from 'react-icons/fa';
 
 const ScrollToTop = () => {
-  const [visible, setVisible] = useState(false);
+  const [showArrow, setShowArrow] = useState(false);
 
-  // Show button when page is scrolled down
   useEffect(() => {
     const handleScroll = () => {
-      setVisible(window.scrollY > 300);
+      setShowArrow(window.scrollY > 300);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Scroll to top smoothly
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const scrollUp = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
-    visible && (
+    showArrow && (
       <button
-        onClick={scrollToTop}
+        onClick={scrollUp}
         className="fixed bottom-6 right-6 z-50 bg-purple-600 hover:bg-purple-700 text-white p-3 rounded-full shadow-lg transition-all duration-300"
-        aria-label="Scroll to Top"
+        aria-label="Scroll to top"
       >
-        ⬆
+        <FaArrowUp className="text-white text-lg" />
       </button>
     )
   );
