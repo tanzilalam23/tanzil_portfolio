@@ -104,10 +104,10 @@ I’m a B.Tech CSE student at **Amity University Raipur** (2022–2026), passion
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/Jasleen-05/react-portfolio.git
+git clone https://github.com/Jasleen-05/Web-Portfolio.git
 
 # 2. Move into the directory
-cd react-portfolio
+cd project
 
 # 3. Install dependencies
 npm install
