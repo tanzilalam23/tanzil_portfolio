@@ -9,7 +9,7 @@ const About = () => {
       <div className="rounded-2xl bg-white/10 dark:bg-white/10 backdrop-blur-md border border-white/20 shadow-xl transition-all duration-300 hover:scale-[1.02] p-8 max-w-4xl mx-auto text-left">
         <p className="text-lg leading-relaxed text-gray-800 dark:text-white">
           I’m <span className="font-semibold text-purple-600">Jasleen Kaur Matharoo</span>, a dedicated B.Tech Computer Science student at Amity University Raipur (2022–2026), with a strong foundation in 
-          <span className="font-medium text-purple-500"> AI, Android development, ethical hacking</span> and innovative software solutions. I am passionate about turning real-world challenges into impactful tech projects.
+          <span className="font-medium text-purple-500"> Android development, Ethical hacking, ML, Front-End Web Development</span> and innovative software solutions. I am passionate about turning real-world challenges into impactful tech projects.
         </p>
 
         <p className="text-lg leading-relaxed mt-4 text-gray-800 dark:text-white">
@@ -20,7 +20,7 @@ const About = () => {
 
         <p className="text-lg leading-relaxed mt-4 text-gray-800 dark:text-white">
           Outside of coding, I actively pursue learning through certifications in 
-          <span className="italic"> machine learning, ethical hacking</span>, and Android development. My toolkit includes <strong>Python, Kotlin, SQL, Android Studio</strong> and more.
+          <span className="italic"> machine learning, ethical hacking</span>, and<span className="italic"> Android development</span>. My toolkit includes <strong>Python, Kotlin, SQL, Android Studio</strong> and more.
         </p>
       </div>
     </section>

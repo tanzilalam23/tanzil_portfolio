@@ -4,7 +4,7 @@ import React from 'react';
 const skills = [
   'Python', 'Java', 'C++', 'Kotlin', 'XML',
   'Android Studio', 'Ethical Hacking', 'MySQL',
-  'Machine Learning', 'HTML', 'CSS', 'JavaScript',
+  'Machine Learning', 'HTML', 'CSS', 'JavaScript', 'React'
 ];
 
 const Skills = () => {

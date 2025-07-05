@@ -24,15 +24,15 @@ const Hero = () => {
 
           {/* Desktop Typewriter (hidden on mobile) */}
 <p className="typewriter hidden sm:inline-block text-lg sm:text-xl text-[#4682b4] dark:text-gray-200">
-  AI Innovator | Ethical Hacker | Android Developer | Hackathon Winner
+   Android Developer | Ethical Hacker | Front-End Web Developer | Data Scientist
 </p>
 
 {/* Mobile Version (only visible on mobile) */}
 <p className="block sm:hidden text-lg text-[#4682b4] dark:text-gray-200 leading-snug text-center">
-  AI Innovator <br />
-  Ethical Hacker <br />
   Android Developer <br />
-  Hackathon Winner</p>
+  Ethical Hacker <br />
+  Front-End Web Developer <br />
+  Data Scientist</p>
 
           <div className="flex flex-wrap justify-center gap-6 text-lg text-white underline drop-shadow-sm mt-4">
             <a href="https://github.com/Jasleen-05" target="_blank" rel="noreferrer">GitHub</a>
