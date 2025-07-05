@@ -66,7 +66,7 @@ I’m a B.Tech CSE student at **Amity University Raipur** (2022–2026), passion
 │
 ├── 📁 public/
 │   ├── vite.svg
-│   └── Jasleen Kaur Matharoo.pdf   # ✅ Added PDF file
+│   └── Jasleen Kaur Matharoo.pdf  
 │
 ├── 📁 src/
 │   ├── 📁 components/
