@@ -4,7 +4,7 @@
 
 Welcome to my interactive React-based portfolio — a sleek, responsive, and immersive experience built using **React**, **Tailwind CSS**, and **3D Spline**.
 
-🔗 **Live Demo**: https://react-jasleen-web-portfolio.netlify.app/
+🔗 **Live Demo**: https://react-jasleen-web-portfolio.netlify.app/              
 📬 **Contact**: jasleen.matharoo@s.amity.edu | +91 7024026295  
 🔗 **LinkedIn**: [linkedin.com/in/jasleenkaurmatharoo](http://www.linkedin.com/in/jasleenkaurmatharoo)  
 💻 **GitHub**: [github.com/Jasleen-05](https://github.com/Jasleen-05)  
