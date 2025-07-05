@@ -1,10 +1,10 @@
 import React from 'react';
-import '../style.css'; // Ensure it includes typewriter CSS
+import '../style.css'; // Ensure typewriter styles are included
 
 const Hero = () => {
   return (
     <header className="relative h-screen overflow-hidden">
-      {/* ✅ Spline 3D Background */}
+      {/* ✅ Background 3D */}
       <iframe
         src="https://my.spline.design/robotfollowcursorforlandingpage-OBjZ6qzl9ibeNpfO1HfvYb7u/"
         frameBorder="0"
@@ -22,17 +22,16 @@ const Hero = () => {
             Hi, I'm Jasleen Kaur Matharoo
           </h2>
 
-          {/* ✅ Typewriter on medium and above; static on small */}
+          {/* ✅ Show static text on mobile, typewriter on medium+ */}
           <p className="text-[#4682b4] dark:text-gray-200 text-lg md:text-xl">
-            <span className="hidden sm:inline-block typewriter">
+            <span className="block md:hidden">
               AI Innovator | Ethical Hacker | Android Developer | Hackathon Winner
             </span>
-            <span className="inline-block sm:hidden">
+            <span className="hidden md:inline-block typewriter">
               AI Innovator | Ethical Hacker | Android Developer | Hackathon Winner
             </span>
           </p>
 
-          {/* ✅ Links */}
           <div className="flex flex-wrap justify-center gap-6 text-lg text-white underline drop-shadow-sm mt-4">
             <a href="https://github.com/Jasleen-05" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/jasleenkaurmatharoo" target="_blank" rel="noreferrer">LinkedIn</a>
