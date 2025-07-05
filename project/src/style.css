@@ -247,3 +247,25 @@ html.dark .nav-link:hover {
 @keyframes blink {
   50% { border-color: transparent; }
 }
+
+/* === Bounce + Glow Animation === */
+.bounce-glow {
+  animation: bounce 1.2s infinite ease-in-out; /* ⏩ faster speed */
+  filter: drop-shadow(0 0 16px rgba(139, 92, 246, 0.8)); /* 💡 stronger glow */
+  transition: transform 0.2s ease, filter 0.2s ease;
+  will-change: transform;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px); /* ⬆️ more bounce */
+  }
+}
+
+.bounce-glow:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 24px rgba(139, 92, 246, 1)); /* 💡 intense glow on hover */
+}
