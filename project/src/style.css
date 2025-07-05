@@ -125,7 +125,7 @@ html.dark .project-description {
 
 /* === Skill Tags === */
 .skill-tag {
-  display: inline-block;
+  display: inline-flex;
   background-color: #e0d4fc;
   color: #1f2937;
   padding: 0.5rem 1rem;
@@ -268,4 +268,17 @@ html.dark .nav-link:hover {
 .bounce-glow:hover {
   transform: scale(1.08);
   filter: drop-shadow(0 0 24px rgba(139, 92, 246, 1)); /* 💡 intense glow on hover */
+}
+
+.skill-icon-glow {
+  width: 3rem; /* ensures consistent size */
+  height: 3rem;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.95)); /* stronger white glow */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.skill-icon-glow:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 1)); /* even more glow on hover */
 }

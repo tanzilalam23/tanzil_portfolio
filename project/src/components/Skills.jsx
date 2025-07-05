@@ -1,9 +1,19 @@
 import React from 'react';
 
 const skills = [
-  'Python', 'Java', 'C++', 'Kotlin', 'XML',
-  'Android Studio', 'Ethical Hacking', 'MySQL',
-  'Machine Learning', 'HTML', 'CSS', 'JavaScript', 'React'
+  { name: 'Python', logo: '/logos/python.png' },
+  { name: 'Java', logo: '/logos/java.png' },
+  { name: 'C++', logo: '/logos/c++.png' },
+  { name: 'Kotlin', logo: '/logos/kotlin.png' },
+  { name: 'XML', logo: '/logos/xml.png' },
+  { name: 'Android Studio', logo: '/logos/android.png' },
+  { name: 'Ethical Hacking', logo: '/logos/ethical.png' },
+  { name: 'MySQL', logo: '/logos/mysql.png' },
+  { name: 'Machine Learning', logo: '/logos/ml.png' },
+  { name: 'HTML', logo: '/logos/html.png' },
+  { name: 'CSS', logo: '/logos/css.png' },
+  { name: 'JavaScript', logo: '/logos/js.png' },
+  { name: 'React', logo: '/logos/react.png' },
 ];
 
 const Skills = () => {
@@ -17,9 +27,10 @@ const Skills = () => {
             {/* Skills List */}
             <div className="flex flex-wrap justify-center gap-4 text-lg md:w-2/3">
               {skills.map((skill, index) => (
-                <span key={index} className="skill-tag">
-                  {skill}
-                </span>
+                  <span key={index} className="skill-tag flex items-center gap-2">
+                <img src={skill.logo} alt={skill.name} className="skill-icon-glow"/>
+                {skill.name}
+              </span>
               ))}
             </div>
 
