@@ -1,10 +1,10 @@
 # 💫 Jasleen Kaur Matharoo | React Portfolio Website
 
-> ⚠️ **Best viewed in dark mode**
+> For best experience view in dark mode.
 
 Welcome to my interactive React-based portfolio — a sleek, responsive, and immersive experience built using **React**, **Tailwind CSS**, and **3D Spline**.
 
-🔗 **Live Demo**: [Add Netlify/Vercel link here]  
+🔗 **Live Demo**: https://react-jasleen-web-portfolio.netlify.app/              
 📬 **Contact**: jasleen.matharoo@s.amity.edu | +91 7024026295  
 🔗 **LinkedIn**: [linkedin.com/in/jasleenkaurmatharoo](http://www.linkedin.com/in/jasleenkaurmatharoo)  
 💻 **GitHub**: [github.com/Jasleen-05](https://github.com/Jasleen-05)  
@@ -61,11 +61,13 @@ I’m a B.Tech CSE student at **Amity University Raipur** (2022–2026), passion
 
 ```
 
-react-portfolio/
-├── public/
-│   └── index.html
-├── src/
-│   ├── components/
+📦 project
+│
+├── 📁 public/
+│   └──vite.svg
+│
+├── 📁 src/
+│   ├── 📁 components/
 │   │   ├── About.jsx
 │   │   ├── Contact.jsx
 │   │   ├── Hero.jsx
@@ -73,13 +75,19 @@ react-portfolio/
 │   │   ├── Projects.jsx
 │   │   ├── ScrollToTop.jsx
 │   │   └── Skills.jsx
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── style.css
-├── tailwind.config.js
-├── postcss.config.js
+│   │
+│   ├── App.jsx                   # Main app wrapper
+│   ├── main.jsx                  # React root render
+│   └── style.css                # All custom + Tailwind CSS
+│
+├── .gitignore
+├── index.html                   
+├── postcss.config.cjs          # PostCSS with Tailwind plugin
+├── tailwind.config.js          # Tailwind config
 ├── package.json
-└── README.md
+├── package-lock.json
+└── README.md                 
+
 
 ````
 
