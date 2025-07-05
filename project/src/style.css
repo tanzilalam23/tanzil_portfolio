@@ -230,34 +230,21 @@ html.dark .nav-link:hover {
 
 .typewriter {
   overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid #8b5cf6; /* typing cursor */
-  animation: typing 4.5s steps(40, end) 1s infinite, blink 0.75s step-end infinite;
+  white-space: nowrap; /* ✅ single-line only */
+  border-right: 2px solid #8b5cf6;
   display: inline-block;
-  max-width: 100%;
   font-family: monospace;
-} 
+  animation: typing 4s steps(60, end) 1s infinite, blink 0.75s step-end infinite;
+  max-width: 100%;
+}
 
 @keyframes typing {
-  0% {
-    width: 0;
-  }
-  40% {
-    width: 100%;
-  }
-  60% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
+  0% { width: 0; }
+  50% { width: 100%; }
+  100% { width: 0; }
 }
 
 @keyframes blink {
-  0%, 100% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #8b5cf6;
-  }
+  0%, 100% { border-color: transparent; }
+  50% { border-color: #8b5cf6; }
 }

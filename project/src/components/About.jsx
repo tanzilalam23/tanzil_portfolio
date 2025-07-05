@@ -20,7 +20,7 @@ const About = () => {
 
         <p className="text-lg leading-relaxed mt-4 text-gray-800 dark:text-white">
           Outside of coding, I actively pursue learning through certifications in 
-          <span className="italic">machine learning, ethical hacking</span>, and Android development. My toolkit includes <strong>Python, Kotlin, SQL, C++, Android Studio</strong> and more.
+          <span className="italic"> machine learning, ethical hacking</span>, and Android development. My toolkit includes <strong>Python, Kotlin, SQL, Android Studio</strong> and more.
         </p>
       </div>
     </section>

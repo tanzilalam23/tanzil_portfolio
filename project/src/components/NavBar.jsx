@@ -18,12 +18,12 @@ const Navbar = () => {
   }, [isDark]);
 
   return (
-    <nav className="p-4 bg-white dark:bg-gray-800 shadow flex justify-between items-center sticky top-0 z-50">
+    <nav className="p-4 bg-white dark:bg-gray-800 shadow flex flex-wrap justify-between items-center sticky top-0 z-50">
       <h1 className="text-xl font-bold text-purple-600 dark:text-purple-400">
         Jasleen Kaur
       </h1>
 
-      <div className="flex items-center space-x-4">
+      <div className="flex flex-wrap items-center justify-end gap-2 md:space-x-4">
         {/* Navigation Links */}
         <a href="#about" className="nav-link">About</a>
         <a href="#projects" className="nav-link">Projects</a>
