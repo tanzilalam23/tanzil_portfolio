@@ -22,15 +22,17 @@ const Hero = () => {
             Hi, I'm Jasleen Kaur Matharoo
           </h2>
 
-          {/* ✅ Show static text on mobile, typewriter on medium+ */}
-          <p className="text-[#4682b4] dark:text-gray-200 text-lg md:text-xl">
-            <span className="block md:hidden">
-              AI Innovator | Ethical Hacker | Android Developer | Hackathon Winner
-            </span>
-            <span className="hidden md:inline-block typewriter">
-              AI Innovator | Ethical Hacker | Android Developer | Hackathon Winner
-            </span>
-          </p>
+          {/* Desktop Typewriter (hidden on mobile) */}
+<p class="typewriter hidden sm:inline-block text-lg sm:text-xl text-[#4682b4] dark:text-gray-200">
+  AI Innovator | Ethical Hacker | Android Developer | Hackathon Winner
+</p>
+
+{/* Mobile Version (only visible on mobile) */}
+<p class="block sm:hidden text-lg text-[#4682b4] dark:text-gray-200 leading-snug text-center">
+  AI Innovator <br />
+  Ethical Hacker <br />
+  Android Developer <br />
+  Hackathon Winner</p>
 
           <div className="flex flex-wrap justify-center gap-6 text-lg text-white underline drop-shadow-sm mt-4">
             <a href="https://github.com/Jasleen-05" target="_blank" rel="noreferrer">GitHub</a>
