@@ -58,7 +58,7 @@ I’m a B.Tech CSE student at **Amity University Raipur** (2022–2026), passion
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Structure
 
 ```
 
@@ -66,7 +66,8 @@ I’m a B.Tech CSE student at **Amity University Raipur** (2022–2026), passion
 │
 ├── 📁 public/
 │   ├── vite.svg
-│   └── Jasleen Kaur Matharoo.pdf  
+│   └── Jasleen Kaur Matharoo.pdf
+    └── Tech-Stack.png    
 │
 ├── 📁 src/
 │   ├── 📁 components/
