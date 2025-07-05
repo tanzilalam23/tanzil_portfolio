@@ -23,12 +23,12 @@ const Hero = () => {
           </h2>
 
           {/* Desktop Typewriter (hidden on mobile) */}
-<p class="typewriter hidden sm:inline-block text-lg sm:text-xl text-[#4682b4] dark:text-gray-200">
+<p className="typewriter hidden sm:inline-block text-lg sm:text-xl text-[#4682b4] dark:text-gray-200">
   AI Innovator | Ethical Hacker | Android Developer | Hackathon Winner
 </p>
 
 {/* Mobile Version (only visible on mobile) */}
-<p class="block sm:hidden text-lg text-[#4682b4] dark:text-gray-200 leading-snug text-center">
+<p className="block sm:hidden text-lg text-[#4682b4] dark:text-gray-200 leading-snug text-center">
   AI Innovator <br />
   Ethical Hacker <br />
   Android Developer <br />
