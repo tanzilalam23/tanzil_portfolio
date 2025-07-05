@@ -22,6 +22,17 @@ const About = () => {
           Outside of coding, I actively pursue learning through certifications in 
           <span className="italic"> machine learning, ethical hacking</span>, and<span className="italic"> Android development</span>. My toolkit includes <strong>Python, Kotlin, SQL, Android Studio</strong> and more.
         </p>
+<br></br>
+ {/* ✅ Resume Download Button */}
+        <div className="text-center">
+          <a
+            href="/Jasleen Kaur Matharoo Resume.pdf"
+            download
+            className="inline-block bg-purple-600 text-white px-6 py-2 rounded-full shadow-md hover:bg-purple-700 transition"
+          >
+            📄 Download Resume
+          </a>
+        </div>
       </div>
     </section>
   );
