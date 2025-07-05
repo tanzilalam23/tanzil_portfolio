@@ -50,7 +50,8 @@ I’m a B.Tech CSE student at **Amity University Raipur** (2022–2026), passion
 ## 🧪 Screenshots
 
 ### 🌠 Hero Section (Interactive Spline)
-![Hero Screenshot]![image](https://github.com/user-attachments/assets/0a91e434-8cc4-4a43-882e-0915a5b445f7)
+![Hero Screenshot]![image](https://github.com/user-attachments/assets/0a165682-f07b-4c78-8937-7c2bf40b7429)
+
 
 ### 💡 Projects Flip Cards
 ![Projects Flip Screenshot]![image](https://github.com/user-attachments/assets/0f905e2f-eb98-4ebc-9064-e3a454b452ae)
