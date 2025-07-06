@@ -54,7 +54,8 @@ I’m a B.Tech CSE student at **Amity University Raipur** (2022–2026), passion
 
 
 ### 💡 Projects Flip Cards
-![Projects Flip Screenshot]![image](https://github.com/user-attachments/assets/0f905e2f-eb98-4ebc-9064-e3a454b452ae)
+![Projects Flip Screenshot]![image](https://github.com/user-attachments/assets/b7c2e42f-0571-4815-b3e8-5ebc30e3f707)
+
 
 ---
 
