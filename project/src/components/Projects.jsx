@@ -1,8 +1,21 @@
-
 import React from 'react';
-import '../style.css'; // Adjust path if needed
+import '../style.css'; // Ensure your flip + glow styles are in this file
 
 const projects = [
+  {
+    title: 'Crypto Website',
+    description:
+      'Luxury, glassmorphic-style crypto trading site with animations and Web3 onboarding.',
+    tech: ['HTML', 'CSS', 'TypeScript'],
+    link: 'https://github.com/Jasleen-05/crypto-website-jasleen',
+  },
+  {
+    title: 'Web Portfolio',
+    description:
+      'Personal portfolio built using React with 3D Spline, dark mode, and project flips.',
+    tech: ['React', 'Tailwind CSS', 'JavaScript','HTML'],
+    link: 'https://github.com/Jasleen-05/Web-Portfolio',
+  },
   {
     title: 'AURA – Women’s Safety App',
     description:
@@ -51,7 +64,7 @@ const Projects = () => {
             <div key={index} className="flip-card">
               <div className="flip-inner">
                 {/* Front */}
-                <div className="flip-front">
+                <div className="flip-front project-bubble">
                   <h4 className="project-title">{project.title}</h4>
                   <p className="project-description mt-2">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mt-4">
