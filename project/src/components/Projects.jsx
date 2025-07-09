@@ -51,6 +51,34 @@ const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     link: 'https://github.com/Jasleen-05/E-bidding',
   },
+  {
+    title: 'Fine-Tuned Local Chatbot',
+    description:
+      'Offline chatbot using a fine-tuned Transformer model (Hugging Face + PyTorch) with Flask.',
+    tech: ['Python', 'Flask', 'Hugging Face', 'LLM'],
+    link: 'https://github.com/Jasleen-05/My-Fine-Tuned-Local-Chatbot',
+  },
+  {
+    title: 'Stable Diffusion Chatbot',
+    description:
+      'Flask chatbot that generates images from text using Stable Diffusion in real-time.',
+    tech: ['Python', 'Flask', 'Stable Diffusion'],
+    link: 'https://github.com/Jasleen-05/Stable-diffusion-chatbot',
+  },
+  {
+    title: 'Mistral Chatbot',
+    description:
+      'Locally hosted conversational AI powered by Mistral-7B, built with Flask for real-time chat.',
+    tech: ['Python', 'Flask', 'Mistral-7B'],
+    link: 'https://github.com/Jasleen-05/Mistral-Chatbot',
+  },
+  {
+    title: 'LLaMA Chatbot',
+    description:
+      'Lightweight AI chatbot using Meta\'s LLaMA model with Flask & Hugging Face Transformers.',
+    tech: ['Python', 'Flask', 'LLaMA', 'Transformers'],
+    link: 'https://github.com/Jasleen-05/llama-chatbot',
+  },
 ];
 
 const Projects = () => {
