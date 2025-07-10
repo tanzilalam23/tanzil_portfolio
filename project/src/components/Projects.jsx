@@ -7,14 +7,22 @@ const projects = [
     description:
       'Luxury, glassmorphic-style crypto trading site with animations and Web3 onboarding.',
     tech: ['HTML', 'CSS', 'TypeScript'],
-    link: 'https://github.com/Jasleen-05/crypto-website-jasleen',
+    links: [
+      { label: 'GitHub', url: 'https://github.com/Jasleen-05/crypto-website-jasleen' },
+      { label: 'Live Demo', url: 'https://lovable.dev/projects/a98de9df-c9d7-4f7e-af23-776de63be175' },
+    ],
   },
   {
     title: 'Web Portfolio',
     description:
       'Personal portfolio built using React with 3D Spline, dark mode, and project flips.',
-    tech: ['React', 'Tailwind CSS', 'JavaScript','HTML'],
-    link: 'https://github.com/Jasleen-05/Web-Portfolio',
+    tech: ['React', 'Tailwind CSS', 'JavaScript', 'HTML'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/Jasleen-05/Web-Portfolio/tree/main' },
+      { label: 'Live Demo', url: 'https://jasleen-web-portfolio.netlify.app/' },
+      { label: 'GitHub-React', url: 'https://github.com/Jasleen-05/Web-Portfolio' },
+      { label: 'Live Demo-React', url: 'https://react-jasleen-web-portfolio.netlify.app/' },
+    ],
   },
   {
     title: 'AURA – Women’s Safety App',
@@ -28,21 +36,30 @@ const projects = [
     description:
       'ML model predicting property rates using trend analysis and linear regression.',
     tech: ['Python', 'ML', 'Linear Regression'],
-    link: 'https://github.com/Jasleen-05/Property-Price-Prediction',
+    links: [
+      { label: 'GitHub', url: 'https://github.com/Jasleen-05/Property-Price-Prediction' },
+      { label: 'Live Demo', url: 'https://property-price-prediction-jasleen.streamlit.app/' },
+    ],
   },
   {
     title: 'Customer Churn Prediction',
     description:
       'Predicts potential customer loss using behavioral analytics and unsupervised learning.',
     tech: ['Python', 'ML', 'Unsupervised Learning'],
-    link: 'https://github.com/Jasleen-05/Customer-Churn-Prediction',
+    links: [
+      { label: 'GitHub', url: 'hhttps://github.com/Jasleen-05/Customer-Churn-Prediction' },
+      { label: 'Live Demo', url: 'https://customer-churn-prediction-jasleen.streamlit.app/' },
+    ],
   },
   {
     title: 'Early Disease Detection',
     description:
       'Analyzes patient data to detect potential diseases using predictive modeling.',
     tech: ['Healthcare', 'ML', 'Data Science', 'Python'],
-    link: 'https://github.com/Jasleen-05/Early-Disease-Detection',
+    links: [
+      { label: 'GitHub', url: 'https://github.com/Jasleen-05/Early-Disease-Detection' },
+      { label: 'Live Demo', url: 'https://early-disease-detection-jasleen.streamlit.app/' },
+    ],
   },
   {
     title: 'E-Bidding Website',
@@ -75,7 +92,7 @@ const projects = [
   {
     title: 'LLaMA Chatbot',
     description:
-      'Lightweight AI chatbot using Meta\'s LLaMA model with Flask & Hugging Face Transformers.',
+      "Lightweight AI chatbot using Meta's LLaMA model with Flask & Hugging Face Transformers.",
     tech: ['Python', 'Flask', 'LLaMA', 'Transformers'],
     link: 'https://github.com/Jasleen-05/llama-chatbot',
   },
@@ -109,14 +126,30 @@ const Projects = () => {
 
                 {/* Back */}
                 <div className="flip-back">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-button"
-                  >
-                    View Project
-                  </a>
+                  <div className="flex flex-col items-center gap-2">
+                    {project.links ? (
+                      project.links.map((link, i) => (
+                        <a
+                          key={i}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-button"
+                        >
+                          {link.label}
+                        </a>
+                      ))
+                    ) : (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-button"
+                      >
+                        View Project
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
