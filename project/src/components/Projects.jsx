@@ -56,7 +56,7 @@ const projects = [
     description:
       'Offline chatbot using a fine-tuned Transformer model (Hugging Face + PyTorch) with Flask.',
     tech: ['Python', 'Flask', 'Hugging Face', 'LLM'],
-    link: 'https://github.com/Jasleen-05/My-Fine-Tuned-Local-Chatbot',
+    link: 'https://huggingface.co/Jasleen05/my-local-chatbot',
   },
   {
     title: 'Stable Diffusion Chatbot',
