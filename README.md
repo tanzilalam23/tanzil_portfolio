@@ -3,7 +3,7 @@
 
 Welcome to my interactive portfolio — a sleek, responsive, and immersive experience built using **React**, **Tailwind CSS**, and **3D Spline**.
 
-🔗 **Live Demo**: https://react-jasleen-web-portfolio.netlify.app/              
+🔗 **Live Demo**: 
 📬 **Contact**: mohammadtanzilalam@gmail.com
 🔗 **LinkedIn**: [linkedin.com/Tanzil](https://www.linkedin.com/in/mohammad-tanzil-alam/)  
 💻 **GitHub**: [github.com/Tanzil](https://github.com/tanzilalam23)  
@@ -45,12 +45,5 @@ Welcome to my interactive portfolio — a sleek, responsive, and immersive exper
 ## 📌 License
 
 This project is open-source and free to use for learning and personal portfolios. Commercial redistribution is not permitted.
-
----
-
-## 🤝 Let's Connect
-
-For collaborations, ideas, or suggestions:
-📧 **Email**: jasleen.matharoo@s.amity.edu
 
 ---
