@@ -44,10 +44,11 @@ const Skills = () => {
               {skills.map((skill, index) => (
                 <span
                   key={index}
-                  className="skill-tag flex items-center gap-2 px-3 py-1 rounded-full font-medium text-white transition-all duration-300"
+                  className="skill-tag flex items-center gap-2 px-3 py-1 rounded-full font-medium transition-all duration-300"
                   style={{
                     backgroundColor: 'rgb(37,40,131)',
                     boxShadow: '0 0 6px rgb(0,255,186)',
+                    color: '#ffffff', // Added explicit white color
                   }}
                 >
                   <img
