@@ -1,4 +1,4 @@
-# 💫 Jasleen Kaur Matharoo | React Portfolio Website
+# 💫 Mohammad Tanzil Alam | React Portfolio Website
 
 > For best experience view in dark mode.
 
