@@ -12,7 +12,7 @@ const careerJourney = [
   { 
     monthYear: 'January 2024', 
     role: 'Online Tutor', 
-    company: 'Self Employed', 
+    company: '', 
     description: 'Designed training programs and led hands-on mentorship for data engineering and cloud.',
   },
   { 
