@@ -43,7 +43,7 @@ const About = () => {
           {/* ✅ Resume Download Button */}
           <div className="text-center">
             <a
-              href="/Tanzil_Alam_CV.pdf"
+              href="/Mohd_Tamzil_CV.pdf"
               download
               className="inline-block bg-[rgb(37,40,131)] text-white px-6 py-2 rounded-full shadow-md hover:bg-[rgb(0,255,186)] transition"
             >
