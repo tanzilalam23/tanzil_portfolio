@@ -23,9 +23,8 @@ const TypewriterRoles = ({ roles, interval = 2000 }) => {
 const Hero = () => {
   const roles = [
     "Data Engineer",
-    "Gen AI Engineer",
     "Software Engineer",
-    "AWS Cloud Practitioner",
+    "Cloud Engineer",
   ];
 
   return (
