@@ -17,31 +17,44 @@ const About = () => {
           {lang === 'en' && (
             <>
               <p className="text-lg leading-relaxed text-white">
-                I'm <span className="font-semibold" style={{ color: 'rgb(0,255,186)' }}>Mohammad Tanzil Alam</span>, a Data Engineer with 4+ years of experience building
-                cloud-native data platforms, distributed ETL pipelines, and AI-powered analytics solutions.
-                I am <span className="font-medium" style={{ color: 'rgb(0,255,186)' }}>AWS Certified</span> with expertise in
-                <span style={{ color: 'rgb(0,255,186)' }}> Python, SQL, PySpark, and Terraform</span>,
-                and experienced in designing AI-driven applications with
-                <span style={{ color: 'rgb(0,255,186)' }}> Large Language Models (LLMs), semantic search, and vector databases (FAISS)</span>.
+                I'm <span className="font-semibold" style={{ color: 'rgb(0,255,186)' }}>Mohammad Tanzil Alam</span> — a
+                Data & Software Engineer based in Wuppertal, Germany, with 4+ years of hands-on experience
+                across cloud infrastructure, data systems, and software engineering.
               </p>
 
               <p className="text-lg leading-relaxed mt-4 text-white">
-                I have delivered impactful projects such as
-                <span style={{ color: 'rgb(0,255,186)' }}> automated KPI pipelines</span>,
-                real-time reporting systems, and
-                <span style={{ color: 'rgb(0,255,186)' }}> NLP-based healthcare data processing</span>.
-                My work leverages advanced techniques including
-                <span style={{ color: 'rgb(0,255,186)' }}> Retrieval-Augmented Generation (RAG), semantic embeddings</span>, and
-                <span style={{ color: 'rgb(0,255,186)' }}> AI-powered dashboards </span>
-                to unlock new analytics use cases and accelerate digital transformation.
+                I started as a <span style={{ color: 'rgb(0,255,186)' }}>Software Engineer</span>, building
+                CI/CD pipelines for 60+ clients, automating AWS microservice deployments with
+                <span style={{ color: 'rgb(0,255,186)' }}> Terraform</span> across 13+ ISPs, and mentoring
+                junior developers — so my data engineering work has always been grounded in solid software
+                fundamentals. That background means I don't just build pipelines; I build them to last.
               </p>
 
               <p className="text-lg leading-relaxed mt-4 text-white">
-                Beyond engineering, I mentor aspiring data engineers,
-                design interactive <span style={{ color: 'rgb(0,255,186)' }}>AI applications</span>, and pursue certifications in
-                <span style={{ color: 'rgb(0,255,186)' }}> machine learning and cloud engineering</span>.
-                My toolkit extends to <span style={{ color: 'rgb(0,255,186)' }}>Docker, Streamlit, Git, and modern DevOps practices</span>,
-                enabling me to bridge data engineering with scalable deployments.
+                On the data side, I design and deliver end-to-end
+                <span style={{ color: 'rgb(0,255,186)' }}> ETL/ELT pipelines</span>, AWS cloud infrastructure,
+                and GDPR-compliant data architectures — most recently at
+                <span style={{ color: 'rgb(0,255,186)' }}> Roche Diagnostics</span> and
+                <span style={{ color: 'rgb(0,255,186)' }}> Arcondis GmbH</span> in healthcare and consulting.
+                At Arcondis, I automated an ERP–CRM ingestion pipeline that saved
+                <span style={{ color: 'rgb(0,255,186)' }}> 20+ hours of manual work monthly</span>. At Roche,
+                I reduced data access time by <span style={{ color: 'rgb(0,255,186)' }}>60%</span> and achieved
+                <span style={{ color: 'rgb(0,255,186)' }}> 99.5% accuracy</span> processing clinical NLP data.
+              </p>
+
+              <p className="text-lg leading-relaxed mt-4 text-white">
+                I'm <span style={{ color: 'rgb(0,255,186)' }}>AWS Certified</span>, hold an M.Sc. in Data
+                Engineering from Jacobs University (full merit scholarship, top 5% Microsoft Tech Associate),
+                speak <span style={{ color: 'rgb(0,255,186)' }}>German at B2</span> level, and hold an EU Blue Card.
+                When a project genuinely calls for ML or AI —
+                <span style={{ color: 'rgb(0,255,186)' }}> vector embeddings, RAG, NLP</span> — I bring it in.
+                But I'm an engineer first, and I pick the right tool for the job.
+              </p>
+
+              <p className="text-lg leading-relaxed mt-4 text-white">
+                Outside of engineering, I <span style={{ color: 'rgb(0,255,186)' }}>mentor</span> bachelor's
+                and master's students in data engineering, DevOps, and cloud computing. I learn fast,
+                implement faster, and I'm always looking for the next hard problem to solve.
               </p>
             </>
           )}
@@ -50,31 +63,47 @@ const About = () => {
           {lang === 'de' && (
             <>
               <p className="text-lg leading-relaxed text-white">
-                Ich bin <span className="font-semibold" style={{ color: 'rgb(0,255,186)' }}>Mohammad Tanzil Alam</span>, ein Dateningenieur mit über 4 Jahren Erfahrung im Aufbau
-                cloudnativer Datenplattformen, verteilter ETL-Pipelines und KI-gestützter Analyselösungen.
-                Ich bin <span className="font-medium" style={{ color: 'rgb(0,255,186)' }}>AWS-zertifiziert</span> mit Expertise in
-                <span style={{ color: 'rgb(0,255,186)' }}> Python, SQL, PySpark und Terraform</span>,
-                und erfahren in der Entwicklung KI-gesteuerter Anwendungen mit
-                <span style={{ color: 'rgb(0,255,186)' }}> großen Sprachmodellen (LLMs), semantischer Suche und Vektordatenbanken (FAISS)</span>.
+                Ich bin <span className="font-semibold" style={{ color: 'rgb(0,255,186)' }}>Mohammad Tanzil Alam</span> —
+                Data & Software Engineer aus Wuppertal mit über 4 Jahren praktischer Erfahrung in
+                Cloud-Infrastruktur, Datensystemen und Softwareentwicklung.
               </p>
 
               <p className="text-lg leading-relaxed mt-4 text-white">
-                Ich habe wirkungsvolle Projekte realisiert, darunter
-                <span style={{ color: 'rgb(0,255,186)' }}> automatisierte KPI-Pipelines</span>,
-                Echtzeit-Berichtssysteme und
-                <span style={{ color: 'rgb(0,255,186)' }}> NLP-basierte Gesundheitsdatenverarbeitung</span>.
-                Meine Arbeit nutzt fortschrittliche Techniken wie
-                <span style={{ color: 'rgb(0,255,186)' }}> Retrieval-Augmented Generation (RAG), semantische Einbettungen</span> und
-                <span style={{ color: 'rgb(0,255,186)' }}> KI-gestützte Dashboards</span>,
-                um neue Analyseanwendungsfälle zu erschließen und die digitale Transformation zu beschleunigen.
+                Ich habe als <span style={{ color: 'rgb(0,255,186)' }}>Software Engineer</span> angefangen —
+                CI/CD-Pipelines für 60+ Kunden aufgebaut, AWS-Microservice-Deployments mit
+                <span style={{ color: 'rgb(0,255,186)' }}> Terraform</span> für 13+ ISPs automatisiert und
+                Junior-Entwickler betreut. Meine Data-Engineering-Arbeit hat daher immer ein solides
+                softwaretechnisches Fundament. Das bedeutet: Ich baue Pipelines nicht nur — ich baue sie so,
+                dass sie halten.
               </p>
 
               <p className="text-lg leading-relaxed mt-4 text-white">
-                Neben meiner Ingenieurtätigkeit betreue ich angehende Dateningenieure,
-                entwickle interaktive <span style={{ color: 'rgb(0,255,186)' }}>KI-Anwendungen</span> und strebe Zertifizierungen in
-                <span style={{ color: 'rgb(0,255,186)' }}> Machine Learning und Cloud Engineering</span> an.
-                Mein Werkzeugkasten umfasst <span style={{ color: 'rgb(0,255,186)' }}>Docker, Streamlit, Git und moderne DevOps-Praktiken</span>,
-                die es mir ermöglichen, Data Engineering mit skalierbaren Deployments zu verbinden.
+                Im Bereich Data Engineering entwerfe und liefere ich durchgängige
+                <span style={{ color: 'rgb(0,255,186)' }}> ETL/ELT-Pipelines</span>, AWS-Cloud-Infrastruktur
+                und DSGVO-konforme Datenarchitekturen — zuletzt bei
+                <span style={{ color: 'rgb(0,255,186)' }}> Roche Diagnostics</span> und
+                <span style={{ color: 'rgb(0,255,186)' }}> Arcondis GmbH</span> im Gesundheits- und
+                Beratungsbereich. Bei Arcondis habe ich eine ERP–CRM-Ingestionspipeline automatisiert und
+                damit <span style={{ color: 'rgb(0,255,186)' }}>20+ Stunden manueller Arbeit pro Monat</span> eingespart.
+                Bei Roche habe ich die Datenzugriffszeit um <span style={{ color: 'rgb(0,255,186)' }}>60%</span> reduziert
+                und bei der Verarbeitung klinischer NLP-Daten eine Genauigkeit von
+                <span style={{ color: 'rgb(0,255,186)' }}> 99,5%</span> erreicht.
+              </p>
+
+              <p className="text-lg leading-relaxed mt-4 text-white">
+                Ich bin <span style={{ color: 'rgb(0,255,186)' }}>AWS-zertifiziert</span>, habe einen M.Sc. in
+                Data Engineering von der Jacobs University (Vollstipendium, Top 5% beim Microsoft Tech
+                Associate), spreche <span style={{ color: 'rgb(0,255,186)' }}>Deutsch auf B2-Niveau</span> und
+                besitze eine EU Blue Card. Wenn ein Projekt ML oder KI erfordert —
+                <span style={{ color: 'rgb(0,255,186)' }}> Vektoreinbettungen, RAG, NLP</span> — setze ich
+                diese gezielt ein. Aber ich bin zuerst Ingenieur und wähle das richtige Werkzeug für die
+                jeweilige Aufgabe.
+              </p>
+
+              <p className="text-lg leading-relaxed mt-4 text-white">
+                Neben meiner Ingenieurtätigkeit <span style={{ color: 'rgb(0,255,186)' }}>begleite ich</span> Bachelor-
+                und Masterstudierende in den Bereichen Data Engineering, DevOps und Cloud Computing. Ich
+                lerne schnell, setze schneller um — und suche immer nach dem nächsten schwierigen Problem.
               </p>
             </>
           )}
@@ -84,7 +113,7 @@ const About = () => {
           {/* ✅ Both CV buttons side by side */}
           <div className="flex flex-wrap justify-center gap-4">
             {/* English CV */}
-            <a
+            
               href="/Mohd_Tanzil_CV.pdf"
               download
               className="inline-block px-6 py-2 rounded-full shadow-md transition"
@@ -109,7 +138,7 @@ const About = () => {
             </a>
 
             {/* German CV */}
-            <a
+            
               href="/Mohd_Tanzil_lebenslauf.pdf"
               download
               className="inline-block px-6 py-2 rounded-full shadow-md transition"
