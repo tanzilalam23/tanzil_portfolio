@@ -18,6 +18,7 @@ const ScrollToTop = () => {
       top: 0,
       behavior: 'smooth',
     });
+    window.history.replaceState(null, '', '/');
   };
 
   return (
