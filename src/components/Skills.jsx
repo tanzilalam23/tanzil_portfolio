@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLanguage } from './LanguageContext';
 
 const skills = [
   { name: 'GenAI', logo: '/logos/genai.png' },
@@ -23,6 +24,8 @@ const skills = [
 ];
 
 const Skills = () => {
+  const { t } = useLanguage();
+
   return (
     <section
       id="skills"
@@ -33,12 +36,12 @@ const Skills = () => {
           className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 drop-shadow-lg"
           style={{ color: 'rgb(0,255,186)' }}
         >
-          Skills
+          {t.skills.heading}
         </h3>
 
         <div className="rounded-2xl bg-[rgb(37,40,131)] border border-[rgb(0,255,186)] shadow-[0_0_25px_rgba(0,255,186,0.5)] transition-all duration-300 hover:scale-[1.02] p-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-            
+
             {/* Skills List */}
             <div className="flex flex-wrap justify-center gap-4 text-lg md:w-2/3">
               {skills.map((skill, index) => (
@@ -48,14 +51,10 @@ const Skills = () => {
                   style={{
                     backgroundColor: 'rgb(37,40,131)',
                     boxShadow: '0 0 6px rgb(0,255,186)',
-                    color: '#ffffff', // Added explicit white color
+                    color: '#ffffff',
                   }}
                 >
-                  <img
-                    src={skill.logo}
-                    alt={skill.name}
-                    className="skill-icon-glow w-6 h-6"
-                  />
+                  <img src={skill.logo} alt={skill.name} className="skill-icon-glow w-6 h-6" />
                   {skill.name}
                 </span>
               ))}
@@ -70,7 +69,6 @@ const Skills = () => {
                 style={{ filter: 'drop-shadow(0 0 15px rgb(0,255,186))' }}
               />
             </div>
-
           </div>
         </div>
       </div>
