@@ -11,9 +11,9 @@ const About = () => {
           {t.about.heading}
         </h3>
 
-        <div className="rounded-2xl bg-[rgba(17,24,39,0.8)] dark:bg-[rgba(17,24,39,0.8)] border border-[rgba(37,40,131,0.5)] shadow-xl transition-all duration-300 hover:scale-[1.02] p-8 max-w-4xl mx-auto text-left">
+        {/* FIX: Added `relative` so the absolute dots are clipped inside this card */}
+        <div className="relative rounded-2xl bg-[rgba(17,24,39,0.8)] dark:bg-[rgba(17,24,39,0.8)] border border-[rgba(37,40,131,0.5)] shadow-xl transition-all duration-300 hover:scale-[1.02] p-8 max-w-4xl mx-auto text-left overflow-hidden">
 
-          {/* ── English paragraphs ── */}
           {lang === 'en' && (
             <>
               <p className="text-lg leading-relaxed text-white">
@@ -21,7 +21,6 @@ const About = () => {
                 Data & Software Engineer based in Wuppertal, Germany, with 4+ years of hands-on experience
                 across cloud infrastructure, data systems, and software engineering.
               </p>
-
               <p className="text-lg leading-relaxed mt-4 text-white">
                 I started as a <span style={{ color: 'rgb(0,255,186)' }}>Software Engineer</span>, building
                 CI/CD pipelines for 60+ clients, automating AWS microservice deployments with
@@ -29,7 +28,6 @@ const About = () => {
                 junior developers — so my data engineering work has always been grounded in solid software
                 fundamentals. That background means I don't just build pipelines; I build them to last.
               </p>
-
               <p className="text-lg leading-relaxed mt-4 text-white">
                 On the data side, I design and deliver end-to-end
                 <span style={{ color: 'rgb(0,255,186)' }}> ETL/ELT pipelines</span>, AWS cloud infrastructure,
@@ -41,7 +39,6 @@ const About = () => {
                 I reduced data access time by <span style={{ color: 'rgb(0,255,186)' }}>60%</span> and achieved
                 <span style={{ color: 'rgb(0,255,186)' }}> 99.5% accuracy</span> processing clinical NLP data.
               </p>
-
               <p className="text-lg leading-relaxed mt-4 text-white">
                 I'm <span style={{ color: 'rgb(0,255,186)' }}>AWS Certified</span>, hold an M.Sc. in Data
                 Engineering from Jacobs University (full merit scholarship, top 5% Microsoft Tech Associate),
@@ -50,7 +47,6 @@ const About = () => {
                 <span style={{ color: 'rgb(0,255,186)' }}> vector embeddings, RAG, NLP</span> — I bring it in.
                 But I'm an engineer first, and I pick the right tool for the job.
               </p>
-
               <p className="text-lg leading-relaxed mt-4 text-white">
                 Outside of engineering, I <span style={{ color: 'rgb(0,255,186)' }}>mentor</span> bachelor's
                 and master's students in data engineering, DevOps, and cloud computing. I learn fast,
@@ -59,7 +55,6 @@ const About = () => {
             </>
           )}
 
-          {/* ── German paragraphs ── */}
           {lang === 'de' && (
             <>
               <p className="text-lg leading-relaxed text-white">
@@ -67,7 +62,6 @@ const About = () => {
                 Data & Software Engineer aus Wuppertal mit über 4 Jahren praktischer Erfahrung in
                 Cloud-Infrastruktur, Datensystemen und Softwareentwicklung.
               </p>
-
               <p className="text-lg leading-relaxed mt-4 text-white">
                 Ich habe als <span style={{ color: 'rgb(0,255,186)' }}>Software Engineer</span> angefangen —
                 CI/CD-Pipelines für 60+ Kunden aufgebaut, AWS-Microservice-Deployments mit
@@ -76,7 +70,6 @@ const About = () => {
                 softwaretechnisches Fundament. Das bedeutet: Ich baue Pipelines nicht nur — ich baue sie so,
                 dass sie halten.
               </p>
-
               <p className="text-lg leading-relaxed mt-4 text-white">
                 Im Bereich Data Engineering entwerfe und liefere ich durchgängige
                 <span style={{ color: 'rgb(0,255,186)' }}> ETL/ELT-Pipelines</span>, AWS-Cloud-Infrastruktur
@@ -89,7 +82,6 @@ const About = () => {
                 und bei der Verarbeitung klinischer NLP-Daten eine Genauigkeit von
                 <span style={{ color: 'rgb(0,255,186)' }}> 99,5%</span> erreicht.
               </p>
-
               <p className="text-lg leading-relaxed mt-4 text-white">
                 Ich bin <span style={{ color: 'rgb(0,255,186)' }}>AWS-zertifiziert</span>, habe einen M.Sc. in
                 Data Engineering von der Jacobs University (Vollstipendium, Top 5% beim Microsoft Tech
@@ -99,7 +91,6 @@ const About = () => {
                 diese gezielt ein. Aber ich bin zuerst Ingenieur und wähle das richtige Werkzeug für die
                 jeweilige Aufgabe.
               </p>
-
               <p className="text-lg leading-relaxed mt-4 text-white">
                 Neben meiner Ingenieurtätigkeit <span style={{ color: 'rgb(0,255,186)' }}>begleite ich</span> Bachelor-
                 und Masterstudierende in den Bereichen Data Engineering, DevOps und Cloud Computing. Ich
@@ -110,10 +101,9 @@ const About = () => {
 
           <br />
 
-          {/* ✅ Both CV buttons side by side */}
           <div className="flex flex-wrap justify-center gap-4">
-            {/* English CV */}
-            
+            {/* FIX: Added missing opening <a tag */}
+            <a
               href="/Mohd_Tanzil_CV.pdf"
               download
               className="inline-block px-6 py-2 rounded-full shadow-md transition"
@@ -137,8 +127,8 @@ const About = () => {
               📝 {lang === 'en' ? 'Download Resume (EN)' : 'Lebenslauf herunterladen (EN)'}
             </a>
 
-            {/* German CV */}
-            
+            {/* FIX: Added missing opening <a tag */}
+            <a
               href="/Mohd_Tanzil_lebenslauf.pdf"
               download
               className="inline-block px-6 py-2 rounded-full shadow-md transition"
@@ -163,8 +153,8 @@ const About = () => {
             </a>
           </div>
 
-          {/* Floating particles */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Animated dots — now correctly clipped inside the card via parent's overflow-hidden */}
+          <div className="absolute inset-0 pointer-events-none">
             {[...Array(40)].map((_, i) => {
               const left = Math.random() * 100;
               const top = Math.random() * 100;
