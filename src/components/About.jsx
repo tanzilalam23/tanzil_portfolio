@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from './LanguageContext';
 
 const About = () => {
   const { lang, t } = useLanguage();
+  const [showVideo, setShowVideo] = useState(false);
 
   return (
     <div className="w-full min-h-screen bg-gray-900 text-white">
@@ -11,8 +12,7 @@ const About = () => {
           {t.about.heading}
         </h3>
 
-        {/* FIX: Added `relative` so the absolute dots are clipped inside this card */}
-        <div className="relative rounded-2xl bg-[rgba(17,24,39,0.8)] dark:bg-[rgba(17,24,39,0.8)] border border-[rgba(37,40,131,0.5)] shadow-xl transition-all duration-300 hover:scale-[1.02] p-8 max-w-4xl mx-auto text-left overflow-hidden">
+        <div className="rounded-2xl bg-[rgba(17,24,39,0.8)] dark:bg-[rgba(17,24,39,0.8)] border border-[rgba(37,40,131,0.5)] shadow-xl transition-all duration-300 hover:scale-[1.02] p-8 max-w-4xl mx-auto text-left relative">
 
           {lang === 'en' && (
             <>
@@ -99,11 +99,36 @@ const About = () => {
             </>
           )}
 
+          {/* Play Video Button */}
+          <div className="mt-8 flex justify-center">
+            <button
+              onClick={() => setShowVideo(true)}
+              className="flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300"
+              style={{
+                backgroundColor: 'rgb(37,40,131)',
+                color: 'rgb(0,255,186)',
+                border: '1px solid rgb(0,255,186)',
+                boxShadow: '0 0 12px rgba(0,255,186,0.3)',
+              }}
+              onMouseEnter={e => {
+                e.currentTarget.style.backgroundColor = 'rgb(0,255,186)';
+                e.currentTarget.style.color = 'rgb(17,24,39)';
+              }}
+              onMouseLeave={e => {
+                e.currentTarget.style.backgroundColor = 'rgb(37,40,131)';
+                e.currentTarget.style.color = 'rgb(0,255,186)';
+              }}
+            >
+              <span style={{ fontSize: '1.2rem' }}>▶</span>
+              {lang === 'en' ? 'Watch My Intro' : 'Intro-Video ansehen'}
+            </button>
+          </div>
+
           <br />
 
+          {/* CV Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
-            {/* FIX: Added missing opening <a tag */}
-            <a
+            
               href="/Mohd_Tanzil_CV.pdf"
               download
               className="inline-block px-6 py-2 rounded-full shadow-md transition"
@@ -127,8 +152,7 @@ const About = () => {
               📝 {lang === 'en' ? 'Download Resume (EN)' : 'Lebenslauf herunterladen (EN)'}
             </a>
 
-            {/* FIX: Added missing opening <a tag */}
-            <a
+            
               href="/Mohd_Tanzil_lebenslauf.pdf"
               download
               className="inline-block px-6 py-2 rounded-full shadow-md transition"
@@ -153,8 +177,8 @@ const About = () => {
             </a>
           </div>
 
-          {/* Animated dots — now correctly clipped inside the card via parent's overflow-hidden */}
-          <div className="absolute inset-0 pointer-events-none">
+          {/* Floating particles */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
             {[...Array(40)].map((_, i) => {
               const left = Math.random() * 100;
               const top = Math.random() * 100;
@@ -181,6 +205,44 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Video Modal */}
+      {showVideo && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center"
+          style={{ backgroundColor: 'rgba(0,0,0,0.85)' }}
+          onClick={() => setShowVideo(false)}
+        >
+          <div
+            className="relative w-full max-w-3xl mx-4 rounded-2xl overflow-hidden"
+            style={{ border: '1px solid rgb(0,255,186)', boxShadow: '0 0 40px rgba(0,255,186,0.3)' }}
+            onClick={e => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setShowVideo(false)}
+              className="absolute top-3 right-4 z-10 text-2xl font-bold"
+              style={{ color: 'rgb(0,255,186)' }}
+            >
+              ✕
+            </button>
+
+            <iframe
+              key={lang}
+              width="100%"
+              height="450"
+              src={lang === 'en'
+                ? 'https://www.youtube.com/embed/fTqUVXpIHGc?autoplay=1'
+                : 'https://www.youtube.com/embed/JlXZO9faKZA?autoplay=1'
+              }
+              title="Intro Video"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+              style={{ display: 'block' }}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
