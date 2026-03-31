@@ -14,6 +14,7 @@ const About = () => {
 
         <div className="rounded-2xl bg-[rgba(17,24,39,0.8)] dark:bg-[rgba(17,24,39,0.8)] border border-[rgba(37,40,131,0.5)] shadow-xl transition-all duration-300 hover:scale-[1.02] p-8 max-w-4xl mx-auto text-left relative">
 
+          {/* English */}
           {lang === 'en' && (
             <>
               <p className="text-lg leading-relaxed text-white">
@@ -55,6 +56,7 @@ const About = () => {
             </>
           )}
 
+          {/* German */}
           {lang === 'de' && (
             <>
               <p className="text-lg leading-relaxed text-white">
@@ -99,7 +101,7 @@ const About = () => {
             </>
           )}
 
-          {/* Play Video Button */}
+          {/* ✅ Play Video Button */}
           <div className="mt-8 flex justify-center">
             <button
               onClick={() => setShowVideo(true)}
@@ -126,9 +128,9 @@ const About = () => {
 
           <br />
 
-          {/* CV Buttons */}
+          {/* ✅ CV Buttons — fixed, both <a> tags properly written */}
           <div className="flex flex-wrap justify-center gap-4">
-            
+            <a
               href="/Mohd_Tanzil_CV.pdf"
               download
               className="inline-block px-6 py-2 rounded-full shadow-md transition"
@@ -152,7 +154,7 @@ const About = () => {
               📝 {lang === 'en' ? 'Download Resume (EN)' : 'Lebenslauf herunterladen (EN)'}
             </a>
 
-            
+            <a
               href="/Mohd_Tanzil_lebenslauf.pdf"
               download
               className="inline-block px-6 py-2 rounded-full shadow-md transition"
@@ -206,7 +208,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Video Modal */}
+      {/* ✅ Video Modal */}
       {showVideo && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center"
@@ -225,14 +227,14 @@ const About = () => {
             >
               ✕
             </button>
-
             <iframe
               key={lang}
               width="100%"
               height="450"
-              src={lang === 'en'
-                ? 'https://www.youtube.com/embed/fTqUVXpIHGc?autoplay=1'
-                : 'https://www.youtube.com/embed/JlXZO9faKZA?autoplay=1'
+              src={
+                lang === 'en'
+                  ? 'https://www.youtube.com/embed/fTqUVXpIHGc?autoplay=1'
+                  : 'https://www.youtube.com/embed/JlXZO9faKZA?autoplay=1'
               }
               title="Intro Video"
               frameBorder="0"
