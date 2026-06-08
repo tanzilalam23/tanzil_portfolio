@@ -128,57 +128,6 @@ const About = () => {
 
           <br />
 
-          {/* ✅ CV Buttons — fixed, both <a> tags properly written */}
-          <div className="flex flex-wrap justify-center gap-4">
-            <a
-              href="/Mohd_Tanzil_CV.pdf"
-              download
-              className="inline-block px-6 py-2 rounded-full shadow-md transition"
-              style={{
-                backgroundColor: 'rgb(37,40,131)',
-                color: 'rgb(0,255,186)',
-                border: '1px solid rgb(0,255,186)',
-                boxShadow: '0 0 8px rgba(0,255,186,0.3)',
-                textDecoration: 'none',
-                fontWeight: '500',
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.backgroundColor = 'rgb(0,255,186)';
-                e.currentTarget.style.color = 'rgb(17,24,39)';
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.backgroundColor = 'rgb(37,40,131)';
-                e.currentTarget.style.color = 'rgb(0,255,186)';
-              }}
-            >
-              📝 {lang === 'en' ? 'Download Resume (EN)' : 'Lebenslauf herunterladen (EN)'}
-            </a>
-
-            <a
-              href="/Mohd_Tanzil_lebenslauf.pdf"
-              download
-              className="inline-block px-6 py-2 rounded-full shadow-md transition"
-              style={{
-                backgroundColor: 'rgb(37,40,131)',
-                color: 'rgb(0,255,186)',
-                border: '1px solid rgb(0,255,186)',
-                boxShadow: '0 0 8px rgba(0,255,186,0.3)',
-                textDecoration: 'none',
-                fontWeight: '500',
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.backgroundColor = 'rgb(0,255,186)';
-                e.currentTarget.style.color = 'rgb(17,24,39)';
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.backgroundColor = 'rgb(37,40,131)';
-                e.currentTarget.style.color = 'rgb(0,255,186)';
-              }}
-            >
-              📄 {lang === 'en' ? 'Download Resume (DE)' : 'Lebenslauf herunterladen (DE)'}
-            </a>
-          </div>
-
           {/* Floating particles */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             {[...Array(40)].map((_, i) => {
@@ -208,42 +157,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* ✅ Video Modal */}
-      {showVideo && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center"
-          style={{ backgroundColor: 'rgba(0,0,0,0.85)' }}
-          onClick={() => setShowVideo(false)}
-        >
-          <div
-            className="relative w-full max-w-3xl mx-4 rounded-2xl overflow-hidden"
-            style={{ border: '1px solid rgb(0,255,186)', boxShadow: '0 0 40px rgba(0,255,186,0.3)' }}
-            onClick={e => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setShowVideo(false)}
-              className="absolute top-3 right-4 z-10 text-2xl font-bold"
-              style={{ color: 'rgb(0,255,186)' }}
-            >
-              ✕
-            </button>
-            <iframe
-              key={lang}
-              width="100%"
-              height="450"
-              src={
-                lang === 'en'
-                  ? 'https://www.youtube.com/embed/fTqUVXpIHGc?autoplay=1'
-                  : 'https://www.youtube.com/embed/JlXZO9faKZA?autoplay=1'
-              }
-              title="Intro Video"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-              style={{ display: 'block' }}
-            />
-          </div>
-        </div>
+
       )}
     </div>
   );
