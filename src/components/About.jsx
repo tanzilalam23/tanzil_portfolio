@@ -66,7 +66,7 @@ const About = () => {
                 </ul>
               </div>
           
-              <h3 className="text-xl font-bold mt-6" style={{ color: 'rgb(0,255,186)' }}>🌐 Live Project Showcase</h3>
+              <h3 className="text-xl font-bold mt-6" style={{ color: 'rgb(0,255,186)' }}>🌐 My AI Chatbot</h3>
               <p className="text-lg leading-relaxed mt-2 text-white">
                 👉 <span className="font-semibold">Interact with my Custom AI:</span> <a href="https://tanzilgptchatbot-xnar8e26wtwwhkuz3nhy7r.streamlit.app/" target="_blank" rel="noopener noreferrer" className="underline font-medium" style={{ color: 'rgb(0,255,186)' }}>Launch TANZILGPT Chatbot</a>
               </p>
