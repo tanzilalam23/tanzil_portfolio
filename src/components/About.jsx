@@ -101,31 +101,6 @@ const About = () => {
             </>
           )}
 
-          {/* ✅ Play Video Button */}
-          <div className="mt-8 flex justify-center">
-            <button
-              onClick={() => setShowVideo(true)}
-              className="flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300"
-              style={{
-                backgroundColor: 'rgb(37,40,131)',
-                color: 'rgb(0,255,186)',
-                border: '1px solid rgb(0,255,186)',
-                boxShadow: '0 0 12px rgba(0,255,186,0.3)',
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.backgroundColor = 'rgb(0,255,186)';
-                e.currentTarget.style.color = 'rgb(17,24,39)';
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.backgroundColor = 'rgb(37,40,131)';
-                e.currentTarget.style.color = 'rgb(0,255,186)';
-              }}
-            >
-              <span style={{ fontSize: '1.2rem' }}>▶</span>
-              {lang === 'en' ? 'Watch My Intro' : 'Intro-Video ansehen'}
-            </button>
-          </div>
-
           <br />
 
           {/* Floating particles */}
